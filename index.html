@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6530bb">
+<meta name="description" content="Lesson Rush — a thoughtful, easy-to-use English lesson planner for Salalah Vocational College. Developed by Ms. Amina Qatan 2026.">
+<title>Lesson Rush · Build a lesson or choose a ready pack</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="studio.css"><link rel="stylesheet" href="pack-studio.css"><link rel="stylesheet" href="simple-ui.css">
+<script defer src="lessons.js"></script><script defer src="worksheets.js"></script><script defer src="worksheet-view.js"></script><script defer src="studio-data.js"></script><script defer src="pack-data.js"></script><script defer src="pack-studio.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#home" aria-label="Lesson Rush home"><span class="brand-mark">ϟ</span><span>Lesson Rush<span class="brand-dot">.</span></span></a>
+<nav aria-label="Main navigation"><button class="nav-item active" data-nav="curriculum"><span data-icon="edit"></span>Build a lesson</button><button class="nav-item" data-nav="packs"><span data-icon="book"></span>Ready packs</button></nav>
+<button class="icon-button" data-action="help" aria-label="Help"><span data-icon="help"></span></button>
+</aside>
+<div class="workspace">
+<header class="topbar"><span id="breadcrumb">Build a lesson</span><span>Salalah Vocational College</span><button id="menu-toggle" hidden aria-expanded="false"></button><span id="saved-count" hidden>0</span></header>
+<main id="main" tabindex="-1"></main>
+<footer class="page-footer"><span>Plan with purpose. Teach with confidence.</span><span>Lesson Rush © 2026 · Ms. Amina Qatan</span></footer>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+<div id="print-area"></div>
+<input id="import-file" type="file" accept="application/json,.json" hidden>
+</body></html>
